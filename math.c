@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <math.h>
 int main(){
-    int a,b;
-    printf("enter two number :\n");
-    scanf("%d%d",&a,&b);
-    int sum=a+b;
-    int sub=a-b;
-    int mul=a*b;
+   double a,b;
+    printf("enter two number :");
+    scanf("%lf%lf",&a,&b);
+    double sum=a+b;
+    double sub=a-b;
+    double mul=a*b;
     double div=a/b;
-    int mod=a%b;
-    int power= pow(a,b);
-    printf("the addition is:%d\n",sum);
-    printf("the subtraction is:%d\n",sub);
-    printf("the multiplication is:%d\n",mul);
+    double mod=fmod(a,b);
+    double power=pow(a,b);
+    printf("the addition is:%lf\n",sum);
+    printf("the subtraction is:%lf\n",sub);
+    printf("the multiplication is:%lf\n",mul);
     printf("the division is:%lf\n",div);
-    printf("the modulus is:%d\n",mod);
-    printf("the power is:%d\n",power);
+    printf("the modulus is:%lf\n",mod);
+    printf("the power is:%lf\n",power);
     return 0;
 
 }
